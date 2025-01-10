@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "s3-statefiles" {
-  bucket = "containers-sandbox-070120251849"
+  bucket = "arquitetura-containers-linuxtips"
 
   tags = {
     Name        = "My bucket"

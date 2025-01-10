@@ -1,5 +1,4 @@
 provider "aws" {
-  profile = "sandbox"
   region  = "us-east-1"
 }
 
@@ -10,5 +9,11 @@ terraform {
       source  = "hashicorp/aws"
       version = "5.64.0"
     }
+  }
+
+  backend "s3" {
+    bucket = "arquitetura-containers-linuxtips"
+    key    = "arquitetura-containers-01/s3/terraform.tfstate"
+    region = "us-east-1"
   }
 }
