@@ -13,7 +13,7 @@ terraform {
 
   backend "s3" {
     bucket = "arquitetura-containers-linuxtips"
-    key    = "arquitetura-containers-01/vpc/terraform.tfstate"
+    key    = "arquitetura-containers-01/internet-gateway/terraform.tfstate"
     region = "us-east-1"
   }
 }
